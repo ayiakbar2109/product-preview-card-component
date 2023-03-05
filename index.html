@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./public/styles.css" type="text/css" />
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body class="bg-cream flex flex-col justify-center items-center h-screen mx-7 md:mx-auto">
+    <section class="rounded-md md:rounded-none bg-whiteoff max-w-xl md:grid md:grid-cols-2 md:rounded-md">
+      <picture>
+        <source srcset="./images/image-product-desktop.jpg" media="(min-width: 1024px)" />
+        <img src="./images/image-product-mobile.jpg" alt="gambar perfume" class="rounded-t-md w-full md:rounded-t-none md:rounded-l-md" />
+      </picture>
+      <article class="p-7 md:p-6">
+        <header>
+          <p class="font-mont tracking-wider text-dark-grayish-blue mb-5">P E R F U M E</p>
+          <h1 class="text-3xl font-fraunces font-bold text-very-dark-blue mb-3">Gabrielle Essence Eau De Parfum</h1>
+        </header>
+          <p class="font-mont font-medium text-dark-grayish-blue mb-5">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+          <div class="grid grid-cols-6 justify-items-stretch mb-5">
+          <p class="text-dark-cyan text-4xl font-extrabold font-fraunces col-span-3">$149.99</p>
+          <del class="font-fraunces text-dark-grayish-blue col-start-4 md:col-start-5">$169.99</del>
+          </div>
+          <button type="submit" class="bg-dark-cyan text-white flex justify-center items-center content-center w-full h-10 rounded-lg font-mont font-bold pointer-events-auto hover:bg-very-dark-blue mt-10 transition ease-in-out delay-150 md:mt-0"><img src="./images/icon-cart.svg" class="mr-2" alt="icon" /> Add to Cart</button>
+        </article>
+    </section>
+  
+  <footer>
+    <div class="attribution mt-7">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ayi Akbar Maulana</a>.
+    </div>
+  </footer>
+  
+</body>
+</html>
